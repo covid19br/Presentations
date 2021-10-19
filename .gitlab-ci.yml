@@ -1,0 +1,19 @@
+image: rocker/verse
+before_script:
+  - R -e "install.packages('xaringanthemer', dependencies = TRUE)"
+  - R -e "install.packages('emojifont', dependencies = TRUE)"
+  - R -e "devtools::install_github('rstudio/fontawesome')"
+  - R -e "devtools::install_github('gadenbuie/xaringanExtra')"
+pages:
+  stage: deploy
+  script:
+  - Rscript -e "rmarkdown::render('conectaR_keynote.Rmd', output_file = 'index.html')"
+  - mkdir public
+  - cp index.html xaringan-themer.css public/
+  - cp -r fig/ public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+  interruptible: true
