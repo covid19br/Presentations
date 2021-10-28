@@ -1,5 +1,6 @@
 ---
-title: "Observatório COVID-19BR: <br> Cidadania científica diante da pandemia no Brasil"
+#title: "Observatório COVID-19BR: <br> Cidadania científica diante da pandemia no Brasil"
+title: "A experiência do Observatório COVID-19 BR"
 subtitle: "E-vigilância 2021"  
 author: "<br>Marcelo Eduardo Borges"
 date: '4 de novembro de 2021'
