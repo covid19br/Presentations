@@ -385,13 +385,13 @@ Contacto: Caroline Franco `r fontawesome::fa("twitter", fill = "#005BAB")`  [@_f
 
 ???
  
-+ Um sistema de equações diferenciais onde a resposta é casos delta / delta t
-+ O efeito das medidas de contenção pode ser modelado: se houver __confinição__ o número de suscetíveis não diminui, mas a transmissão (matriz de contato) muda
++ Um sistema de equações diferenciais onde a resposta é casos delta/delta t
++ O efeito das medidas não-farmacológicas para redução da transmissão do vírus pode ser modelado: se houver __intervenções não-farmacológicas para redução da transmissão__ o número de suscetíveis não diminui, mas a transmissão (matriz de contato) é alterada
 
 ---
 ## Modelagem matemática
 
-+ Efeito do confinamento (março de 2020) e outros cenários: abertura de escolas, rastreio de contatos, vacinação com 1 e 2 doses, etc
++ Efeito das intervenções não-farmacológicas para redução da transmissão, (março de 2020) e outros cenários: abertura de escolas, rastreio de contatos, vacinação com 1 e 2 doses, etc
 
 
 ```{r, out.width=450, fig.align='center'}
@@ -399,7 +399,7 @@ knitr::include_graphics("https://covid19br.github.io/web/cenarios/site_base_now_
 ```
 
 ???
-três cenários: nenhum, rexalamento das medidas agora, mantém isolamento até o final do ano
+três cenários: nenhum, rexalamento das restrições agora, mantém restrições até o final do ano
 outras questões como o efeito da abertura de escolas, rastreio de contatos, e cenários de vacinação
 
 + Outras categorias (e subcategorias) podem ser especificadas (por exemplo __V__: vacinados, não são mais suscetíveis e não serão infectados, mas também __V1__ e __V2__ de acordo com as doses, com intervalo de tempo entre elas)
